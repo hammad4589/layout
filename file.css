@@ -74,6 +74,7 @@ body{
     align-items: center;
  }
  .img{
+
     display: flex;
     justify-content: center;
     margin: 20px;
@@ -81,20 +82,66 @@ body{
     border: 2px;
     justify-content: space-between;
 }
-p{
-    font-family: Arial, Helvetica, sans-serif ;font-size: larger;
-    color: rgb(202, 132, 132);
-    text-decoration: wavy;
-    
-        
-        
+.transition{
+    transition: width 2s, height 0.5s ;
+}
+.transition:hover{
+    width: 350px;
+    height: fit-content;
     
 }
+#transition2{
+
+    transition: width 2s , height 0.5s;
+}
+#transition2:hover{
+    width: 350px;
+    height: fit-content;
+}
+details,summary{
+color: rgb(87, 77, 77);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: 100;
+text-align: center;
+pointer-events: stroke;
+}        
+        
+    
+
 .footer{
     display: flex;
     justify-content:space-evenly;
     margin: 20px;
     padding: 20px;
+    
+}
+
+.animation{
+    
+    text-decoration: none;
+color: black;
+justify-content: center;
+
+    display: flex;
+    animation: bouncing 2s ease 1s infinite alternate both;
+    background-color: rgb(47, 160, 160);
+    padding: auto;
+position: relative;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 2em;
+margin-top: 100px;
 }
     
+@keyframes bouncing {
+    0%{
+    bottom: 0;
+        box-shadow: 0 2 5px black;
+    }
+    100%
+{
+    bottom: 100px;
+    box-shadow: 0 50px 50px black;
+}
+}
+
     
